@@ -8,12 +8,13 @@ def keystoreProperties = new Properties()
 keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 android {
-    compileSdk 33
+    namespace 'com.example.androidassistant'
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.androidassistant"
-        minSdk 23
-        targetSdk 33
+        minSdk 24
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -54,7 +55,7 @@ android {
 dependencies {
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'com.google.android.material:material:1.11.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     
     // Retrofit for API calls
